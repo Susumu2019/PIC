@@ -1,0 +1,9 @@
+>>> Warning 202 "C:\Users\user\Desktop\ZT-PIC18F46K2201_Signboard\process_signboard.c" Line 2(24,42): Variable never used:   signboard_mode_set
+>>> Warning 202 "C:\Users\user\Desktop\ZT-PIC18F46K2201_Signboard\process_signboard.c" Line 3(21,36): Variable never used:   signboard_speed
+>>> Warning 202 "C:\Users\user\Desktop\ZT-PIC18F46K2201_Signboard\process_signboard.c" Line 7(24,42): Variable never used:   signboard_putcount
+>>> Warning 202 "C:\Users\user\Desktop\ZT-PIC18F46K2201_Signboard\process_signboard.c" Line 8(28,50): Variable never used:   signboard_putcount_max
+>>> Warning 202 "C:\Users\user\Desktop\ZT-PIC18F46K2201_Signboard\aqmxx02a.c" Line 91(6,21): Variable never used:   aqmxx02a_icon_1
+>>> Warning 202 "C:\Users\user\Desktop\ZT-PIC18F46K2201_Signboard\aqmxx02a.c" Line 102(6,21): Variable never used:   aqmxx02a_icon_2
+      Memory usage:   ROM=32%      RAM=28% - 28%
+      0 Errors,  6 Warnings.
+Build Successful.

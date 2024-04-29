@@ -1,0 +1,105 @@
+
+ROM used: 21246 (32%)
+          21246 (32%) including unused fragments
+
+          4 Average locations per line
+          12 Average locations per statement
+
+RAM used: 1080 (28%) at main() level
+          1109 (28%) worst case
+
+Stack used: 7 worst case (out of 31 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  656   260  15  main.c
+  604     0   0  ..\..\..\..\Program Files (x86)\PICC\devices\18f46k22.h
+  423     0   0  ..\..\..\..\Program Files (x86)\PICC\drivers\string.h
+   32     0   0  ..\..\..\..\Program Files (x86)\PICC\drivers\stddef.h
+   28     0   0  ..\..\..\..\Program Files (x86)\PICC\drivers\ctype.h
+ 1351   359  20  ..\..\..\..\Program Files (x86)\PICC\drivers\stdlib.h
+  226    45   3  process_signboard.c
+  683  1037  58  ws281x(256).c
+  877     0   0  led_pattern(256).c
+   73    40   2  process_lcd16x2txt.c
+  133    42   2  aqmxx02a.c
+----- -----
+ 5086  1783 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0    246   1  11             @MULFF
+0     54   0   2             @ITOF
+0     34   0   5             @MUL1616
+0     42   0   1             @delay_ms1
+0     36   0   1             @delay_us1
+0     24   0   0             @GETCH_BIU_1
+0     28   0   1             @I2C_WRITEU_1
+0   4110  10   0             @const433
+0   4110  10   0             @const437
+0   4110  10   0             @const441
+0    640   2  10   364  4.1  ws281x_color_set
+0     60   0   4             @SFTOI
+0   3410   8   5 37434  6.0  ws281x_process
+0    278   1   4  1290  6.8  signboard_process
+0     40   0   1    86  1.3  aqmxx02a_cmd
+0     38   0   5   119  4.0  aqmxx02a_setcursor
+0     40   0   1    86  1.3  lcd_char
+0     38   0   1   127  3.0  lcd_start
+0    152   0   1   336  2.8  lcd_ini
+0     86   0   1   112  2.0  lcd_process
+0     18   0   0             @const492
+0     40   0   3             @PSTRINGCN_480
+0     18   0   0             @const495
+0     32   0   2             @PSTRINGC_480
+0    398   1  12   832  4.3  signboard_lcd_process
+0     18   0   0             @const499
+0     26   0   0             @const500
+0     44   0   3             @DIV88
+0    124   0   2             @PRINTF_U_480
+0     26   0   0             @const507
+0    188   0   9             @PRINTF_LU_480
+0     24   0   0             @const510
+0     26   0   0             @const511
+0     24   0   0             @const512
+0     20   0   0             @const514
+0     20   0   0             @const515
+0     18   0   0             @const516
+0     18   0   0             @const517
+0     42   0   0             @const518
+0     20   0   0             @const519
+0     80   0   4   129  3.4  isr_rcv
+0    300   1   4  1153  5.8  int_timer
+0    706   2   2  2812  7.4  startup
+0     16   0   0             @const523
+0      8   0   0             @const524
+0     38   0   2             @PSTRINGR_480
+0    798   2   0   407  6.0  MAIN
+0    108   0   0   475  5.2  input_process
+0    226   1   0   968  5.3  output_process
+0     30   0   0             @const537
+0     24   0   0             @const539
+0     10   0   0             @const544
+ Inline        0             @cinit1
+
+Program metrics:
+    Functions               16
+    Statements              1783
+    Comments                2459
+    Volume (V)              56250
+    Difficulty (D)          70.9
+    Effort to implement (E) 3989304
+    Time to implement (T)   61 hours, 34 minutes
+    Est Delivered Bugs (B)  8
+    Cyclomatic Complexity   60
+    Maintainability (MI)    69
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-000B8   178  0  
+000BA-0FFFE  21064  44286  
+
+
+

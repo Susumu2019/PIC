@@ -1,0 +1,297 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017     @INTERRUPT_AREA
+018     @INTERRUPT_AREA
+019-01A strtok.save
+01B-01E _Randseed
+01F     rs232_errors
+020-02C ver
+02D     cpu_startup_case
+02E     flicker_10
+02F     flicker_10_one
+030     flicker_100
+031     flicker_100_one
+032     flicker_500
+033     flicker_500_one
+034     flicker_1000
+035     flicker_1000_one
+036-037 counttimer1
+038-039 counttimer2
+03A-03B counttimer3
+03C-03D counttimer4
+03E     lcd_process_one
+03F     rtc_process_one
+040     input_process_one
+041     servo_process_one
+042     signboard_process_one
+043     analog_index
+044-047 analog_value
+048     ra0
+049     ra1
+04A     ra2
+04B     ra3
+04C     ra4
+04D     ra5
+04E     ra6
+04F     ra7
+050-051 re0
+052-053 re1
+054     sw1
+055     sw1_re
+056     sw2
+057     sw2_re
+058     sw3
+059     sw3_re
+05A     sw4
+05B     sw4_re
+05C-05D sw1_count_longpress
+05E-05F punctuate
+060     get_command_value_c1
+061-100 get_command_c1
+101-10A compare_command_c1
+10B-10C mode
+10D-10E lcd_mode
+10F-110 cursor_index
+111     step_one
+112-113 timer0_value
+114     life_index
+115-119 life_char
+11A     signboard_color_set
+11B     signboard_mode_set
+11C     signboard_speed
+11D     led_signaltype
+11E     led_timing
+11F     led_brightness
+120     signboard_putcount
+121     signboard_putcount_max
+122-222 ws281x_buffer_r
+223-323 ws281x_buffer_g
+324-424 ws281x_buffer_b
+425-426 ws281x_led_value
+427     ws281x_pattern_value
+428     ws281x_status
+429     ws281x_checkcount
+42A-430 aqmxx02a_icon_1
+431-437 aqmxx02a_icon_2
+438-441 signboard_lcd_process.cursor
+438     lcd_ini.volt
+438     signboard_process.tmp_sw1_true
+438     lcd_process.@SCRATCH1
+438     startup.@SCRATCH1
+438     @PSTRINGR_480.@SCRATCH1
+439     signboard_process.tmp_sw2_true
+439     startup.@SCRATCH2
+439     @PSTRINGR_480.@SCRATCH2
+43A     signboard_process.tmp_sw3_true
+43B     signboard_process.tmp_sw4_true
+43C-43D ws281x_process.tmp1
+43C     ws281x_color_set.set_index
+43D-43E ws281x_color_set.tmp1
+43E     ws281x_process.tmp_buffer_1
+43F     ws281x_process.tmp_buffer_2
+43F     ws281x_color_set.@SCRATCH1
+440     ws281x_process.tmp_buffer_3
+440     ws281x_color_set.@SCRATCH2
+441     @delay_us1.P1
+441     @delay_ms1.P2
+441-442 @MUL1616.P3
+441     ws281x_color_set.@SCRATCH3
+442     lcd_start.line
+442     @PRINTF_U_480.P1
+442     ws281x_color_set.@SCRATCH4
+442     @PSTRINGC_480.@SCRATCH1
+442     signboard_lcd_process.@SCRATCH1
+443-444 @MUL1616.P1
+443     @PRINTF_U_480.P2
+443     aqmxx02a_setcursor.col
+443-444 @PRINTF_LU_480.P1
+443     @PSTRINGCN_480.P2
+443     ws281x_color_set.@SCRATCH5
+443     @PSTRINGC_480.@SCRATCH2
+443     signboard_lcd_process.@SCRATCH2
+444     aqmxx02a_setcursor.row
+444     @DIV88.P1
+444     ws281x_color_set.@SCRATCH6
+444     @PSTRINGCN_480.@SCRATCH1
+445-446 aqmxx02a_setcursor.row_offsets
+445     @DIV88.P1
+445     @MUL1616.@SCRATCH1
+445     ws281x_color_set.@SCRATCH7
+445     @PSTRINGCN_480.@SCRATCH2
+445     @PRINTF_LU_480.@SCRATCH1
+446-449 @SFTOI.P1
+446-447 @ITOF.P2
+446-449 @MULFF.P3
+446     @DIV88.@SCRATCH1
+446     @PRINTF_LU_480.@SCRATCH2
+447     aqmxx02a_setcursor.@SCRATCH1
+447     @PRINTF_LU_480.@SCRATCH3
+448     aqmxx02a_cmd.c
+448     @PRINTF_LU_480.@SCRATCH4
+449     @PRINTF_LU_480.@SCRATCH5
+44A-44D @MULFF.P1
+44A     @PRINTF_LU_480.@SCRATCH6
+44B     @PRINTF_LU_480.@SCRATCH7
+44C     lcd_char.s
+44D     @I2C_WRITEU_1.P1
+44E     @MULFF.@SCRATCH1
+44F     @MULFF.@SCRATCH2
+450     @MULFF.@SCRATCH3
+451     isr_rcv.@SCRATCH1
+451     int_timer.@SCRATCH1
+452     isr_rcv.@SCRATCH2
+452     int_timer.@SCRATCH2
+453     isr_rcv.@SCRATCH3
+453     int_timer.@SCRATCH3
+454     isr_rcv.@SCRATCH4
+454     int_timer.@SCRATCH4
+F55     CCP_5_LOW
+F55     CCP_5
+F56     CCP_5_HIGH
+F58     CCP_4_LOW
+F58     CCP_4
+F59     CCP_4_HIGH
+F5E     CCP_3_LOW
+F5E     CCP_3
+F5F     CCP_3_HIGH
+F67     CCP_2_LOW
+F67     CCP_2
+F68     CCP_2_HIGH
+F78.6   C2OUT
+F79.6   C1OUT
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P3
+FE9-FEA @READ_PROGRAM_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+3466  @MULFF
+3430  @ITOF
+340E  @MUL1616
+385C  @delay_ms1
+3886  @delay_us1
+3222  @GETCH_BIU_1
+3818  @I2C_WRITEU_1
+00BA  ws281x_color_r
+10C8  ws281x_color_g
+20D6  ws281x_color_b
+3598  ws281x_color_set
+355C  @SFTOI
+4044  ws281x_process
+4D96  signboard_process
+3834  aqmxx02a_cmd
+3942  aqmxx02a_setcursor
+398E  lcd_char
+3968  lcd_start
+38AA  lcd_ini
+4EAC  lcd_process
+30E4  @const492
+39D6  @PSTRINGCN_480
+30F6  @const495
+39B6  @PSTRINGC_480
+3EB6  signboard_lcd_process
+3108  @const499
+311A  @const500
+3D52  @DIV88
+3D7E  @PRINTF_U_480
+3134  @const507
+3DFA  @PRINTF_LU_480
+314E  @const510
+3166  @const511
+3180  @const512
+3198  @const514
+31AC  @const515
+31C0  @const516
+31D2  @const517
+31E4  @const518
+320E  @const519
+323A  isr_rcv
+328A  int_timer
+3A24  startup
+33B6  @const523
+33C6  @const524
+39FE  @PSTRINGR_480
+4FE4  MAIN
+3CE6  input_process
+4F02  output_process
+33CE  @const537
+33EC  @const539
+3404  @const544
+4FE4  @cinit1
+50DC  @cinit2
+0136  StrtoulGO
+0136  StrtolGO
+
+
+User Memory space: 
+
+User Memory space: 
+
+Project Directory:
+    C:\Users\user\Desktop\ZT-PIC18F46K2201_Signboard\
+
+Project Files:
+    main.c                                                  [11-6-20 00:45  CRC=4961AC92]
+    ..\..\..\..\Program Files (x86)\PICC\devices\18f46k22.h [04-4-12 14:18  CRC=C162B767]
+    ..\..\..\..\Program Files (x86)\PICC\drivers\string.h   [14-7-11 10:13  CRC=23EDEC8F]
+    ..\..\..\..\Program Files (x86)\PICC\drivers\stddef.h   [16-7-10 09:27  CRC=897CEC6C]
+    ..\..\..\..\Program Files (x86)\PICC\drivers\ctype.h    [03-1-08 13:55  CRC=2D1F019F]
+    ..\..\..\..\Program Files (x86)\PICC\drivers\stdlib.h   [08-6-11 14:39  CRC=0B6669CF]
+    process_signboard.c                                     [11-6-20 00:47  CRC=7DC473BB]
+    ws281x(256).c                                           [11-6-20 00:34  CRC=F5207838]
+    led_pattern(256).c                                      [14-6-20 17:54  CRC=DA23E462]
+    process_lcd16x2txt.c                                    [11-6-20 00:20  CRC=041B11B7]
+    aqmxx02a.c                                              [07-10-19 20:55  CRC=85B3A918]
+
+Source signature=4D3FDC9E
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC18F46K22
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX32:      main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.PJT
+    Call Tree:   main.tre
+    Statistics:  main.STA
