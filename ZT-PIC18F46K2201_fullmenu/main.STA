@@ -1,0 +1,310 @@
+
+ROM used: 47372 (72%)
+          47372 (72%) including unused fragments
+
+          7 Average locations per line
+          17 Average locations per statement
+
+RAM used: 1085 (28%) at main() level
+          1155 (30%) worst case
+
+Stack used: 6 worst case (out of 31 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  990   646  23  main.c
+  604     0   0  ..\..\..\..\Program Files (x86)\PICC\devices\18f46k22.h
+  423     0   0  ..\..\..\..\Program Files (x86)\PICC\drivers\string.h
+   32     0   0  ..\..\..\..\Program Files (x86)\PICC\drivers\stddef.h
+   28     0   0  ..\..\..\..\Program Files (x86)\PICC\drivers\ctype.h
+ 1351   359  13  ..\..\..\..\Program Files (x86)\PICC\drivers\stdlib.h
+  228   268   9  process_rtc.c
+   44    24   1  rx8900.c
+  188   170   6  process_illumiled.c
+  616   894  31  ws281x(256).c
+ 1003     0   0  led_pattern(256).c
+  322   459  16  process_lcd128x64dot.c
+  206     0   0  font_data.c
+  266     0   0  image_data.c
+  159    46   2  lm6029acw.c
+----- -----
+ 6460  2866 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0    122   0   5   231  6.6  strcmp
+0    122   0   9   288  6.0  strpbrk
+0    144   0   9   346  7.5  strspn
+0    178   0  10   475  7.2  strtok
+0    246   0  11             @MULFF
+0     54   0   2             @ITOF
+0    634   1  16             @ADDFF
+0     34   0   5             @MUL1616
+0     42   0   1             @delay_ms1
+0     36   0   1             @delay_us1
+0     24   0   0             @GETCH_BIU_1
+0     28   0   1             @I2C_WRITEU_1
+0     28   0   1             @I2C_READU_1
+0     76   0   0   204  1.4  rtc_date_set
+0    118   0   0   352  2.3  rtc_date_read
+0   1094   1   6  7060  7.5  rtc_process
+0     36   0   2   104  3.7  bcd2i
+0     72   0   3   104  3.7  i2bcd
+0     44   0   3             @DIV88
+0     96   0   2   516  3.9  week2index
+0     96   0   2   516  3.9  index2week
+0   2574   3   0             @const474
+0   2574   3   0             @const478
+0   2574   3   0             @const482
+0    640   1  10   364  4.1  ws281x_color_set
+0     60   0   4             @SFTOI
+0   7076   7  15 25232  8.5  ws281x_mode_set
+0   2652   3   5 27547  6.0  ws281x_process
+0   1290   1   4  5220  8.4  illumiled_process
+0    974   1   0             @const514
+0   1038   1   0             @const518
+0     20   0   1   121  2.2  lcd_cmd
+0     20   0   1   121  2.2  lcd_data
+0    154   0   0   522  2.4  lcd_ini
+0     34   0   2    70  1.6  lcd_start
+0    342   0   4   300  2.3  lcd_char
+0    168   0   7   353  5.6  lcd_bitmap8
+0   3494   4  12 10401  6.0  lcd_process
+0     26   0   0             @const538
+0     40   0   3             @PSTRINGCN_524
+0    188   0   9             @PRINTF_LU_524
+0     24   0   0             @const543
+0     32   0   2             @PSTRINGC_524
+0     24   0   0             @const545
+0    130   0   2             @PRINTF_U_524
+0     74   0   2             @PRINTF_X_524
+0     26   0   0             @const557
+0     24   0   0             @const558
+0     28   0   0             @const559
+0     28   0   0             @const560
+0     28   0   0             @const561
+0     12   0   0             @const562
+0     16   0   0             @const563
+0     26   0   0             @const564
+0     26   0   0             @const565
+0     16   0   0             @const566
+0     26   0   0             @const567
+0     26   0   0             @const568
+0     24   0   0             @const569
+0     26   0   0             @const570
+0     24   0   0             @const571
+0     24   0   0             @const572
+0     24   0   0             @const573
+0     24   0   0             @const574
+0     24   0   0             @const575
+0     24   0   0             @const576
+0     24   0   0             @const577
+0     26   0   0             @const578
+0     24   0   0             @const579
+0     24   0   0             @const580
+0     24   0   0             @const581
+0     24   0   0             @const582
+0     24   0   0             @const583
+0     24   0   0             @const584
+0     24   0   0             @const585
+0     26   0   0             @const586
+0     24   0   0             @const587
+0     24   0   0             @const588
+0     24   0   0             @const589
+0     24   0   0             @const590
+0     24   0   0             @const591
+0     24   0   0             @const592
+0     24   0   0             @const593
+0     26   0   0             @const594
+0     24   0   0             @const595
+0     24   0   0             @const596
+0     24   0   0             @const597
+0     24   0   0             @const598
+0     24   0   0             @const599
+0     24   0   0             @const600
+0     24   0   0             @const601
+0     24   0   0             @const602
+0     24   0   0             @const603
+0     24   0   0             @const604
+0     24   0   0             @const605
+0     24   0   0             @const606
+0     24   0   0             @const607
+0     24   0   0             @const608
+0     24   0   0             @const609
+0     26   0   0             @const610
+0     24   0   0             @const611
+0     26   0   0             @const612
+0     24   0   0             @const613
+0     24   0   0             @const614
+0     24   0   0             @const615
+0     24   0   0             @const616
+0     24   0   0             @const617
+0   1126   1  22  3138  5.9  modeselect_lcd_process
+0     28   0   0             @const619
+0     24   0   0             @const620
+0     24   0   0             @const621
+0     30   0   0             @const622
+0     24   0   0             @const623
+0     24   0   0             @const624
+0     24   0   0             @const625
+0     36   0   0             @const626
+0     28   0   0             @const627
+0     24   0   0             @const628
+0     30   0   0             @const629
+0     30   0   0             @const630
+0     30   0   0             @const631
+0     30   0   0             @const632
+0     24   0   0             @const633
+0     24   0   0             @const634
+0     28   0   0             @const635
+0     24   0   0             @const636
+0     26   0   0             @const637
+0     26   0   0             @const638
+0     26   0   0             @const639
+0     26   0   0             @const640
+0     24   0   0             @const641
+0     24   0   0             @const642
+0    630   1  13  1590  4.4  hardwareinfo_lcd_process
+0     26   0   0             @const644
+0     24   0   0             @const645
+0     24   0   0             @const646
+0     24   0   0             @const647
+0     24   0   0             @const648
+0     24   0   0             @const649
+0     24   0   0             @const650
+0     26   0   0             @const651
+0     26   0   0             @const652
+0     24   0   0             @const653
+0     24   0   0             @const654
+0     24   0   0             @const655
+0     14   0   0             @const656
+0     36   0   2             @PSTRINGR_524
+0     26   0   0             @const658
+0     24   0   0             @const659
+0     24   0   0             @const660
+0    602   1   1   775  3.3  io_lcd_process
+0     26   0   0             @const661
+0     24   0   0             @const662
+0     48   0   0             @const663
+0     42   0   0             @const664
+0     26   0   0             @const665
+0     24   0   0             @const666
+0     24   0   0             @const667
+0     24   0   0             @const668
+0   1204   1  12  2646  4.4  illumiled_lcd_process
+0     26   0   0             @const670
+0     24   0   0             @const671
+0     26   0   0             @const672
+0     24   0   0             @const673
+0     24   0   0             @const674
+0     24   0   0             @const675
+0     24   0   0             @const676
+0     24   0   0             @const677
+0     26   0   0             @const678
+0     24   0   0             @const679
+0     26   0   0             @const680
+0     28   0   0             @const681
+0     28   0   0             @const682
+0     28   0   0             @const683
+0     28   0   0             @const684
+0     28   0   0             @const685
+0     26   0   0             @const686
+0     24   0   0             @const687
+0     28   0   0             @const688
+0     24   0   0             @const689
+0     24   0   0             @const690
+0     24   0   0             @const691
+0     24   0   0             @const692
+0     24   0   0             @const693
+0   4032   4  50  6727  5.0  rtc_lcd_process
+0     26   0   0             @const697
+0     24   0   0             @const698
+0     24   0   0             @const699
+0     30   0   0             @const701
+0     24   0   0             @const702
+0     24   0   0             @const703
+0     22   0   0             @const704
+0     24   0   0             @const705
+0     30   0   0             @const707
+0     24   0   0             @const708
+0     24   0   0             @const709
+0     22   0   0             @const710
+0     24   0   0             @const711
+0     30   0   0             @const713
+0     24   0   0             @const714
+0     24   0   0             @const715
+0     22   0   0             @const716
+0     24   0   0             @const717
+0     30   0   0             @const719
+0     24   0   0             @const720
+0     24   0   0             @const721
+0     24   0   0             @const722
+0      8   0   0             @const723
+0     30   0   0             @const725
+0     24   0   0             @const726
+0     24   0   0             @const727
+0     24   0   0             @const728
+0     28   0   0             @const730
+0     30   0   0             @const731
+0     24   0   0             @const732
+0     24   0   0             @const733
+0     24   0   0             @const734
+0     28   0   0             @const736
+0     30   0   0             @const737
+0     24   0   0             @const738
+0     24   0   0             @const739
+0     24   0   0             @const740
+0     28   0   0             @const742
+0     30   0   0             @const743
+0     24   0   0             @const744
+0     24   0   0             @const745
+0     24   0   0             @const746
+0     24   0   0             @const747
+0     24   0   0             @const748
+0     24   0   0             @const749
+0     80   0   4   129  3.4  isr_rcv
+0    256   0   2  1081  5.3  int_timer
+0    582   1   2  2094  7.4  startup
+0   1404   1   0  2984  5.9  MAIN
+0    108   0   0   475  5.2  input_process
+0    230   0   0  1021  5.3  output_process
+0    248   0   4  1359  4.9  sw_process
+0    466   0   4  2147  7.9  modeselect_process
+0    160   0   4   867  4.8  hardwareinfo_process
+0    124   0   4   714  4.3  io_process
+0    124   0   4   714  4.3  uart_process
+0    136   0   4   858  4.4  graphic_process
+0    638   1   8  3461  8.4  servo_process
+0    304   0   5   700  6.1  serial_process1
+0     20   0   0             @const787
+0     30   0   0             @const788
+0     36   0   2             @PSTRINGC_19200_31766_31767
+0     24   0   0             @const790
+0     42   0   3             @PSTRINGCN_19200_31766_31767
+0    228   0   9             @PRINTF_LD_19200_31766_31767
+0     10   0   0             @const795
+0    192   0   6             @PRINTF_D_19200_31766_31767
+0    114   0   4   140  2.8  save_mode
+ Inline        0             @cinit1
+
+Program metrics:
+    Functions               42
+    Statements              2866
+    Comments                3205
+    Volume (V)              170287
+    Difficulty (D)          204.7
+    Effort to implement (E) 34850000
+    Time to implement (T)   537 hours, 49 minutes
+    Est Delivered Bugs (B)  36
+    Cyclomatic Complexity   442
+    Maintainability (MI)    98
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-000B8   178  0  
+000BA-0FFFE  47190  18160  
+
+
+
