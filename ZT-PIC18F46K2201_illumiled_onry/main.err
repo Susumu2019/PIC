@@ -1,0 +1,4 @@
+>>> Warning 202 "main.c" Line 89(20,34): Variable never used:   servo_rotation
+      Memory usage:   ROM=53%      RAM=28% - 29%
+      0 Errors,  1 Warnings.
+Build Successful.
